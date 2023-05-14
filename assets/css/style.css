@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav li a{
+    padding: 12px 24px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#nav li a:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#nav .subnav li{
+    display: block;
+    line-height: 1;
+}
+
+#nav .subnav li a{
+    color: #000;
+    text-transform: capitalize;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#header .search-box{
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: #fff;
+    padding: 12px 24px;
+}
+
+#header .search-box:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider{
+    width: 100%;
+    margin-top: 48px;
+    padding-top: 50%;
+    background: url('/assets/img/chicago-slider.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider #slider_script{
+    color: #fff;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+#slider #slider_script .script_title{
+    font-size: 24px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+#slider #slider_script .script{
+    margin: 15px 0;
+    font-weight: bolder;
+}
+
+#content .container{
+    padding: 64px 16px;
+    margin: 0 17%;
+}
+
+#content .title_content{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+
+#content .sub_title_content{
+    text-align: center;
+    font-style: italic;
+    margin: 15px 0;
+    color: rgba(0,0,0,0.5);
+}
+
+#band p{
+    margin: 15px 0;
+}
+
+#band .member{
+    text-align: center;
+    float: left;
+    width: 33%;
+}
+
+#band .member .name{
+    margin: 15px 0;
+}
+
+#band .member img{
+    border-radius: 5px;
+    margin-bottom: 16px;
+    width: 70%;
+}
+
+#tour{
+    background-color: #000;
+}
+
+.clear{
+    clear: both;
+}
+
+#content #tour .sub_title_content{
+    color: #ccc
+}
+
+#content #tour .title_content{
+    color: #fff;
+}
+
+#tour .time_box{
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: rgba(0,0,0,0.5);
+}
+
+.sold_out_box{
+    display: inline-block;
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 0 8px;
+}
+
+.num_tickets{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0 8px;
+    margin-right: 16px;
+    float: right;
+}
+
+#place_tour{
+    padding: 32px 8px;
+    margin: 0 -16px;
+    text-align: center;
+}
+
+#place_tour  .place_name{
+    font-weight: bolder;
+    margin: 15px 0;
+    text-align: start;
+}
+
+#place_tour  .time_place{
+    margin: 15px 0;
+    color: rgba(0,0,0,0.5);
+    text-align: start;
+}
+
+#place_tour .sub_place{
+    margin: 15px 0;
+    text-align: start;
+}
+
+#place_tour  .place_box{
+    width: 30%;
+    float: left;
+    margin: 0 8px;
+    margin-bottom: 16px;
+    background-color: #fff;
+}
+
+#place_tour .place_box .place_box_content{
+    margin: 0.15px 16px;
+}
+
+#place_tour .place_box .buy_box{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+#place_tour .place_box .buy_box:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#place_tour img{
+    width: 100%;
+}
+
+#place_tour{
+    display: flex;
+}
+
+#place_tour .place_box{
+    margin: auto;
+}
+
+#inf, #mes{
+    width: 50%;
+    float: left;
+}
+
+button{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 16px 0;
+    text-transform: uppercase;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+#mes button{
+    float: right;
+}
+
+.input_half{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    padding: 0 8px;
+    padding-bottom: 8px;
+}
+
+.input_full{
+    margin: 0 8px;
+}
+
+input{
+    /* display: block; */
+    width: 100%;
+}
+
+input{
+    padding: 8px;
+    border: 0.8px solid #ccc;
+}
+
+#map{
+    width: 100%;
+    padding-top: 60%;
+    background: url("/assets/img/map/map.jpg") top center/ cover no-repeat;
+}
+
+#brand i{
+    font-size: 24px;
+    color: rgba(0,0,0,0.6);
+}
+
+#brand i:hover{
+    color: #ccc
+}
+
+#footer{
+    text-align: center;
+}
+
+#footer p, #footer a{
+    color: rgba(0,0,0,0.5);
+    margin: 15px 0;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal .buy_ticket{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    margin: 0 16px;
+    animation: modalFaceIn ease 0.3s;
+}
+
+.modal .buy_ticket .head_modal{
+    background-color: #009688;
+    color: #fff;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.modal .buy_ticket .close_btn{
+    position: absolute;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+.modal .buy_ticket .close_btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal .body_modal{
+    padding: 0.15px 16px;
+}
+
+.modal .body_modal p{
+    margin: 15px 0;
+}
+
+.modal .body_modal input{
+    padding: 8px;
+    border: 0.8 solid #ccc;
+}
+
+.modal .body_modal .pay_btn{
+    background-color: #009688;
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.modal .body_modal .pay_btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal .body_modal .close{
+    color: #fff;
+    background-color: #f44336;
+    padding: 8px 16px;
+    margin: 16px 0;
+    text-transform: capitalize;
+    /* display: inline-block; */
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.modal .body_modal .close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal .body_modal .help{
+    display: inline-block;
+    float: right;
+}
+
+@keyframes modalFaceIn{
+    from{
+        opacity: 0;
+        transform: translatey(-150px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
